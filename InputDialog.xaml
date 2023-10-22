@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfApp4.InputDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Title="InputDialog" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <Label>Номер 1:</Label>
+            <TextBox Name="txtNumber1"/>
+
+            <Label>Номер 2:</Label>
+            <TextBox Name="txtNumber2"/>
+
+            <Label>Номер 3:</Label>
+            <TextBox Name="txtNumber3"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0,140,0,0">
+            <CheckBox x:Name="chkSumm" Content="Сумма "/>
+            <CheckBox x:Name="chkLeastMultiple" Content="Наименьшее кратное"/>
+        </StackPanel>
+
+        <Button Content="Сохранить ответ" Click="Calculate_Click" Margin="248,151,223,217"/>
+    </Grid>
+</Window>
